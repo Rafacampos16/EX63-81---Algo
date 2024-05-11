@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 65</title>
+    <style>
+        /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  height: 80vh;
+  margin-top: 60px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 8px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercício 65</h1>
+    <p>Crie uma aplicação que faça a leitura de três valores e apresente como resultado final a
+        soma dos quadrados dos três valores lidos. Apresentar também se a soma é um número
+        par ou ímpar.</p>
+
+    <form id="formulario">
+      <div class="input-group">
+        <label for="valor1">Digite o primeiro valor:</label>
+        <input type="number" id="valor1" name="valor1">
+      </div>
+      <div class="input-group">
+        <label for="valor2">Digite o segundo valor:</label>
+        <input type="number" id="valor2" name="valor2">
+      </div>
+      <div class="input-group">
+        <label for="valor3">Digite o terceiro valor:</label>
+        <input type="number" id="valor3" name="valor3">
+      </div>
+
+      <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+
+    <!-- Resultado -->
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script>
+// script.js
+function calcular() {
+  let valor1 = parseFloat(document.getElementById("valor1").value);
+  let valor2 = parseFloat(document.getElementById("valor2").value);
+  let valor3 = parseFloat(document.getElementById("valor3").value);
+
+  let somaDosQuadrados = Math.pow(valor1, 2) + Math.pow(valor2, 2) + Math.pow(valor3, 2);
+
+  let resultadoHTML = `
+    <p>A soma dos quadrados dos valores é ${somaDosQuadrados}.</p>
+    <p>A soma é um número ${somaDosQuadrados % 2 === 0 ? 'par' : 'ímpar'}.</p>
+  `;
+
+  document.getElementById("resultado").innerHTML = resultadoHTML;
+}
+</script>
+</body>
+</html>

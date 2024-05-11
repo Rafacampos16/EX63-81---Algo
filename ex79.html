@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 79</title>
+ <style>/* styles.css */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      justify-content: center;
+      height: 85vh;
+      margin-top: 30px;
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .input-group input {
+      padding: 8px;
+      width: 50%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    .resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercício 79</h1>
+    <p>Escreva um programa que solicite ao usuário que insira 5 notas e, em seguida, calcule e
+        exiba a média das notas.</p>
+
+    <form id="formulario">
+      <div class="input-group">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" name="nota1">
+      </div>
+      <div class="input-group">
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" name="nota2">
+      </div>
+      <div class="input-group">
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" name="nota3">
+      </div>
+      <div class="input-group">
+        <label for="nota4">Nota 4:</label>
+        <input type="number" id="nota4" name="nota4">
+      </div>
+      <div class="input-group">
+        <label for="nota5">Nota 5:</label>
+        <input type="number" id="nota5" name="nota5">
+      </div>
+
+      <button type="button" onclick="calcularMedia()">Calcular Média</button>
+    </form>
+
+    <!-- Resultado -->
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script>
+    // script.js
+function calcularMedia() {
+  let nota1 = parseFloat(document.getElementById("nota1").value);
+  let nota2 = parseFloat(document.getElementById("nota2").value);
+  let nota3 = parseFloat(document.getElementById("nota3").value);
+  let nota4 = parseFloat(document.getElementById("nota4").value);
+  let nota5 = parseFloat(document.getElementById("nota5").value);
+
+  let media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5;
+  
+  document.getElementById("resultado").innerHTML = `A média das notas é: ${media.toFixed(2)}`;
+}
+
+  </script>
+</body>
+</html>

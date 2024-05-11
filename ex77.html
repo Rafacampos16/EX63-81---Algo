@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 77</title>
+ <style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  height: 70vh;
+  margin-top: 80px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 8px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercício 77</h1>
+    <p>Escreva um programa que exiba a tabuada de um número fornecido pelo usuário.</p>
+
+    <form id="formulario">
+      <div class="input-group">
+        <label for="numero">Digite um número para ver sua tabuada:</label>
+        <input type="number" id="numero" name="numero">
+      </div>
+
+      <button type="button" onclick="exibirTabuada()">Exibir Tabuada</button>
+    </form>
+
+    <!-- Resultado -->
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script>
+    // script.js
+function exibirTabuada() {
+  let numero = parseInt(document.getElementById("numero").value);
+  let tabuada = '';
+  for (let i = 1; i <= 10; i++) {
+    tabuada += `${numero} x ${i} = ${numero * i}<br>`;
+  }
+  document.getElementById("resultado").innerHTML = tabuada;
+}
+
+  </script>
+</body>
+</html>

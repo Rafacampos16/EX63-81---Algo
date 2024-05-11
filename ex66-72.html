@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Exercícios</title>
+  <style>
+    body {
+      font-family: cursive;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question h3 {
+      margin-bottom: 10px;
+    }
+
+    .question label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .question input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="question">
+    <h3>Exercício 66:</h3>
+    <p>Analise o código e assinale a alternativa correta:
+       <br> let numero = 5;
+       <br>if (numero % 2 = 0) {
+        <br>console.log("Par");
+        <br>} else {
+            <br> console.log("Ímpar");
+            <br>}
+    </p>
+    <label for="ex66a">A) O código está correto. Ele vai imprimir "Ímpar" quando numero for ímpar e "Par" quando numero for par.</label>
+    <label for="ex66b">B) O operador = deve ser substituído por === na linha if (numero % 2 = 0).</label>
+    <label for="ex66c">C) A variável numero deve ser declarada com var em vez de let.</label>
+    <label for="ex66d">D) A variável numero deve ser inicializada com um número decimal, como let numero = 2.5, para testar corretamente se o código funciona.</label>
+    <label for="ex66e">E) A variável numero deve ser inicializada com uma string, como let numero = "5", para testar corretamente se o código funciona.</label>
+    <br>
+    <input type="radio" name="ex66" id="ex66a">
+    <input type="radio" name="ex66" id="ex66b">
+    <input type="radio" name="ex66" id="ex66c">
+    <input type="radio" name="ex66" id="ex66d">
+    <input type="radio" name="ex66" id="ex66e">
+  </div>
+  <div class="question">
+    <h3>Exercício 67:</h3>
+    <p>Analise o código e assinale a alternativa correta:
+        <br>let numero = -7;
+        <br>  if (numero > 0) {
+            <br> console.log("Positivo");
+            <br> } else {
+                <br> console.log("Negativo");
+                <br> }</p>
+    <label for="ex67a">A) O código está correto. Ele vai imprimir "Positivo" quando numero for positivo e "Negativo" quando numero for negativo.</label>
+    <label for="ex67b">B) O operador > deve ser substituído por === na linha if (numero > 0).</label>
+    <label for="ex67c">C) A variável numero deve ser declarada com var em vez de let.</label>
+    <label for="ex67d">D) A variável numero deve ser inicializada com um número decimal, como let numero = -3.5, para testar corretamente se o código funciona.</label>
+    <label for="ex67e">E) A variável numero deve ser inicializada com uma string, como let numero = "-7", para testar corretamente se o código funciona.</label>
+    <br>
+    <input type="radio" name="ex67" id="ex67a">
+    <input type="radio" name="ex67" id="ex67b">
+    <input type="radio" name="ex67" id="ex67c">
+    <input type="radio" name="ex67" id="ex67d">
+    <input type="radio" name="ex67" id="ex67e">
+  </div>
+  <div class="question">
+    <h3>Exercício 68:</h3>
+    <p>Analise o código e assinale a alternativa correta:
+        <br> Você está criando um programa para calcular se uma pessoa tem um índice de massa
+        corporal (IMC) saudável com base em seu peso e altura. Abaixo está o código do
+        programa que você escreveu diretamente no programa principal. Qual é a alternativa
+        correta para determinar se o código funciona corretamente?
+        <br>let peso = 70;
+        <br> let altura = 1.75;
+        <br> let imc = peso / (altura * altura);
+        <br> if (imc >= 18.5 && imc <= 24.9) {
+            <br>   console.log("IMC saudável");
+            <br>  } else {
+                <br> console.log("IMC não saudável");
+                <br> }</p>
+    <label for="ex68a">A) O código está correto. Ele vai imprimir "IMC saudável" quando o IMC estiver entre 18.5 e 24.9 (inclusive), caso contrário, imprimirá "IMC não saudável".</label>
+    <label for="ex68b">B) O operador <= deve ser substituído por < na linha if (imc >= 18.5 && imc <= 24.9)</label>
+    <label for="ex68c">C) A variável altura deve ser inicializada com um número inteiro, como let altura = 175, para testar corretamente se o código funciona.</label>
+    <label for="ex68d">D) Todas as alternativas estão erradas.</label>
+    <label for="ex68e">E) A variável peso deve ser inicializada com uma string, como let peso = "70", para testar corretamente se o código funciona</label>
+    <br>
+    <input type="radio" name="ex68" id="ex68a">
+    <input type="radio" name="ex68" id="ex68b">
+    <input type="radio" name="ex68" id="ex68c">
+    <input type="radio" name="ex68" id="ex68d">
+    <input type="radio" name="ex68" id="ex68e">
+  </div>
+  <div class="question">
+    <h3>Exercício 69:</h3>
+    <p>Você está criando um programa para contar quantas vezes uma pessoa clica em um
+        botão em um site. O programa deve registrar o número atual de cliques e, em seguida,
+        incrementar esse número sempre que o botão for clicado. Abaixo está o código que você
+        escreveu:
+        <br> let numCliques = 0;
+        <br> // Simulação de clique no botão
+        <br> numCliques++;
+        <br>  // Simulação de mais cliques no botão
+        <br> numCliques += 2;
+        <br> console.log("Número de cliques: " + numCliques);</p>
+    <label for="ex69a">A) O valor impresso será "Número de cliques: 0".</label>
+    <label for="ex69b">B) O valor impresso será "Número de cliques: 1".</label>
+    <label for="ex69c">C) O valor impresso será "Número de cliques: 2"</label>
+    <label for="ex69d">D) O valor impresso será "Número de cliques: 3"</label>
+    <label for="ex69e">E) O valor impresso será "Número de cliques: 4"</label>
+    <br>
+    <input type="radio" name="ex69" id="ex69a">
+    <input type="radio" name="ex69" id="ex69b">
+    <input type="radio" name="ex69" id="ex69c">
+    <input type="radio" name="ex69" id="ex69d">
+    <input type="radio" name="ex69" id="ex69e">
+  </div>
+  <div class="question">
+    <h3>Exercício 70:</h3>
+    <p>Você está criando um programa para registrar a quantidade de itens vendidos em uma
+        loja. O programa deve inicializar o contador de itens vendidos como zero e, em seguida,
+        incrementá-lo sempre que um item for vendido. Abaixo está o código que você escreveu:
+        <br> let itensVendidos = 0;
+        <br>  // Simulação de venda
+        <br>  itensVendidos += 3;
+        <br>  // Simulação de venda
+        <br>  itensVendidos += 2;
+        <br> console.log("Itens vendidos: " + itensVendidos);</p>
+    <label for="ex70a">A) O valor impresso será "Itens vendidos: 0".</label>
+    <label for="ex70b">B) O valor impresso será "Itens vendidos: 1"</label>
+    <label for="ex70c">C) O valor impresso será "Itens vendidos: 3".    </label>
+    <label for="ex70d">D)  O valor impresso será "Itens vendidos: 5"</label>
+    <label for="ex70e">E)  O valor impresso será "Itens vendidos: 6".</label>
+    <br>
+    <input type="radio" name="ex70" id="ex70a">
+    <input type="radio" name="ex70" id="ex70b">
+    <input type="radio" name="ex70" id="ex70c">
+    <input type="radio" name="ex70" id="ex70d">
+    <input type="radio" name="ex70" id="ex70e">
+  </div>
+  <div class="question">
+    <h3>Exercício 71:</h3>
+    <p>Você está desenvolvendo um programa que controla o estoque de produtos em uma loja.
+        O programa inicializa a quantidade de um produto em estoque e, em seguida,
+        decrementa essa quantidade sempre que um produto é vendido. Abaixo está o código
+        que você escreveu:
+        <br> let estoqueProdutoA = 10;
+        <br> estoqueProdutoA -= 3;
+        <br> estoqueProdutoA -= 2;
+        <br>  console.log("Quantidade de Produto A em estoque: " + estoqueProdutoA);
+        <br> Qual será o valor impresso no console após a execução deste código?
+        </p>
+    <label for="ex71a">A) O valor impresso será "Quantidade de Produto A em estoque: 10"</label>
+    <label for="ex71b">B) O valor impresso será "Quantidade de Produto A em estoque: 7".    </label>
+    <label for="ex71c">C) O valor impresso será "Quantidade de Produto A em estoque: 5".</label>
+    <label for="ex71d">D) O valor impresso será "Quantidade de Produto A em estoque: 3".    </label>
+    <label for="ex71e">E) O valor impresso será "Quantidade de Produto A em estoque: 0"</label>
+    <br>
+    <input type="radio" name="ex71" id="ex71a">
+    <input type="radio" name="ex71" id="ex71b">
+    <input type="radio" name="ex71" id="ex71c">
+    <input type="radio" name="ex71" id="ex71d">
+    <input type="radio" name="ex71" id="ex71e">
+  </div>
+  <div class="question">
+    <h3>Exercício 72:</h3>
+    <p>Você está desenvolvendo um programa que monitora a contagem de pessoas em uma
+        sala de conferências. O programa começa com uma contagem inicial e, em seguida,
+        intercala a entrada e a saída de pessoas usando os operadores de incremento ++, += e
+        decremento --, -=. Abaixo está o código que você escreveu:
+        <br> let contagemPessoas = 0;
+        <br>contagemPessoas += 3;
+        <br> contagemPessoas--;
+        <br>contagemPessoas += 2;
+        <br>contagemPessoas--;
+        <br> console.log("Número de pessoas na sala: " + contagemPessoas);
+        <br>Qual será o valor impresso no console após a execução deste código?</p>
+    <label for="ex72a">A) O valor impresso será "Número de pessoas na sala: 0".</label>
+    <label for="ex72b">B) O valor impresso será "Número de pessoas na sala: 2".</label>
+    <label for="ex72c">C) O valor impresso será "Número de pessoas na sala: 3".</label>
+    <label for="ex72d">D) O valor impresso será "Número de pessoas na sala: 4".</label>
+    <label for="ex72e">E) O valor impresso será "Número de pessoas na sala: 5".</label>
+    <br>
+    <input type="radio" name="ex72" id="ex72a">
+    <input type="radio" name="ex72" id="ex72b">
+    <input type="radio" name="ex72" id="ex72c">
+    <input type="radio" name="ex72" id="ex72d">
+    <input type="radio" name="ex72" id="ex72e">
+  </div>
+  <button onclick="verificarRespostas()">Verificar Respostas</button>
+  <div id="resultado" class="resultado"></div>
+</div>
+
+<script>
+  function verificarRespostas() {
+    let pontuacao = 0;
+
+    // Exercício 66
+    if (document.getElementById('ex66b').checked) {
+      pontuacao++;
+      document.getElementById('ex66b').parentNode.style.color = 'green';
+    } else {
+      document.getElementById('ex66b').parentNode.style.color = 'red';
+    }
+
+    // Exercício 67
+    if (document.getElementById('ex67a').checked) {
+      pontuacao++;
+      document.getElementById('ex67a').parentNode.style.color = 'green';
+    } else {
+      document.getElementById('ex67a').parentNode.style.color = 'red';
+    }
+
+    // Exercício 68
+    if (document.getElementById('ex68a').checked) {
+      pontuacao++;
+      document.getElementById('ex68a').parentNode.style.color = 'green';
+    } else {
+      document.getElementById('ex68a').parentNode.style.color = 'red';
+    }
+    
+    // Exercício 69
+    if (document.getElementById('ex69d').checked) {
+      pontuacao++;
+      document.getElementById('ex69d').parentNode.style.color = 'green';
+    } else {
+      document.getElementById('ex69d').parentNode.style.color = 'red';
+    }
+    
+    
+    // Exercício 70
+    if (document.getElementById('ex70d').checked) {
+      pontuacao++;
+      document.getElementById('ex70d').parentNode.style.color = 'green';
+    } else {
+      document.getElementById('ex70d').parentNode.style.color = 'red';
+    }
+    
+    // Exercício 71
+    if (document.getElementById('ex71c').checked) {
+      pontuacao++;
+      document.getElementById('ex71c').parentNode.style.color = 'green';
+    } else {
+      document.getElementById('ex71c').parentNode.style.color = 'red';
+    }
+    
+    // Exercício 72
+    if (document.getElementById('ex72c').checked) {
+      pontuacao++;
+      document.getElementById('ex72c').parentNode.style.color = 'green';
+    } else {
+      document.getElementById('ex72c').parentNode.style.color = 'red';
+    }
+
+    document.getElementById('resultado').innerText = `Pontuação: ${pontuacao}`;
+  }
+</script>
+</body>
+</html>

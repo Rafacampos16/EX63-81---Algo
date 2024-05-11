@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 63:</title>
+
+</head>
+<body>
+    <h1>Exercício 63:</h1>
+
+       <label for="numero1">Digite o primeiro número</label>
+       <input type="number" id="numero1"> <br><br>
+       <label for="numero2">Digite o primeiro número</label>
+       <input type="number" id="numero2"> <br><br>
+       <label for="numero3">Digite o primeiro número</label>
+       <input type="number" id="numero3"> <br><br>
+
+       <button id="btn"> Calcular </button>
+
+       <div id="resultado"> </div>
+  </div>
+
+  <script>
+     let btn = document.getElementById('btn')
+     let div = document.getElementById('resultado')
+
+    function calcular(){
+       let num1 = parseFloat(document.getElementById('numero1').value)
+       let num2 = parseFloat(document.getElementById('numero2').value)
+       let num3 = parseFloat(document.getElementById('numero3').value)
+
+       //let numStr1 = positivoNegativoNull(num1)
+       //let numStr2 = positivoNegativoNull(num2)
+       //let numStr3 = positivoNegativoNull(num3)
+
+      div.innerHTML = `
+      <p>O número ${num1} é ${positivoNegativoNull(num1)}.</p>
+      <p>O número ${num2} é ${positivoNegativoNull(num2)}.</p>
+      <p>O número ${num3} é ${positivoNegativoNull(num3)}.</p>
+      <p>O mair número é ${Math.max(num1, num2, num3)}.</p>`
+
+      limpar()
+    }
+    
+    
+    function positivoNegativoNull(num){
+      if(num > 0){
+        return 'Positivo'
+      }else if (num < 0){
+        return 'Negativo'
+      }else{
+        return 'Nulo'
+      }
+    }
+
+    function limpar(){
+    document.getElementById('numero1').value = ''
+    document.getElementById('numero2').value = ''
+    document.getElementById('numero3').value = ''
+    document.getElementById('numero1').focus()
+    }
+    btn.addEventListener('click',calcular)
+  </script>
+</body>
+</html>

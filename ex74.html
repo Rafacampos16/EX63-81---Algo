@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 74</title>
+    <style>
+        /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  height: 80vh;
+  margin-top: 60px;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercício 74</h1>
+    <p>Escreva um programa que exiba todos os números pares de 1 a 50.    </p>
+    <!-- Resultado -->
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script>
+    // script.js
+function exibirNumerosPares() {
+  let numerosPares = [];
+  for (let i = 2; i <= 50; i += 2) {
+    numerosPares.push(i);
+  }
+  return numerosPares;
+}
+
+document.getElementById("resultado").innerHTML = `Números pares de 1 a 50: ${exibirNumerosPares().join(', ')}.`;
+
+  </script>
+</body>
+</html>
